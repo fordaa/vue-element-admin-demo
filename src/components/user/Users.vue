@@ -304,7 +304,7 @@ this.$refs.editFormRef.resetFields()
   ).catch(err => err)
 
   // 如果用户确认删除， 则返回值为字符串 confirm
-  // 如果取消，返回cancel
+  // 如果取消，返回字符串cancel
   if (confirmResult !== 'confirm') {
     return this.$message.info('已取消删除')
   }
